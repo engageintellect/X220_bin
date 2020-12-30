@@ -19,7 +19,6 @@
 #xinput set-prop bcm5974 libinput\ Accel\ Speed 0.5
 
 
-
 #===[ THINKPAD ]===#
 
 # TRACKPAD ON/OFF (0=off/1=on)
@@ -35,3 +34,7 @@ xinput set-prop Logitech\ M310 libinput\ Natural\ Scrolling\ Enabled 1
 # APPLE MAGIC MOUSE
 xinput set-prop Apple\ Magic\ Mouse libinput\ Natural\ Scrolling\ Enabled 1
 
+
+#===[ RASPBERRY PI ]===#
+
+xinput set-prop PixArt\ USB\ Optical\ Mouse libinput\ Natural\ Scrolling\ Enabled 1
