@@ -3,7 +3,6 @@
 
 # DEFINE SOME VARIABLES FOR PROGRAM
 BOOOKMARK_FILE=~/bin/env/scripts/bookmarks/bookmarks.txt
-BROWSER='chromium'
 
 
 
