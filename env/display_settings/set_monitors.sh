@@ -18,7 +18,7 @@ if [[ "$connected_monitors" == *"VGA"* ]]; then
         bspc desktop -f '^2'
         echo ""
         echo "Layout set successfully"; sleep 1; echo "Exiting..."; sleep 1; clear
-        killall st
+        # killall st
     else
         echo "sounds good, later..."; sleep 1; clear
     fi
@@ -28,8 +28,7 @@ else
     clear
 fi
 
-exit
-
+clear
 
 
 
