@@ -14,8 +14,10 @@ if [[ "$connected_monitors" == *"VGA"* ]]; then
     # if [[ $apply != *"n"* ]]; then
         echo ""; echo "Applying horizontal_layout script..."; sleep .5
         ~/bin/env/display_settings/dual_displays.sh
-        bspc wm -r
-        bspc desktop -f '^2'
+        if [[ $(pgrep bspwm) ]]; then
+            bspc wm -r
+            bspc desktop -f '^2'
+        fi
         echo ""
         echo "Layout set successfully"; sleep 1; echo "Exiting..."; sleep 1; clear
         # killall st
