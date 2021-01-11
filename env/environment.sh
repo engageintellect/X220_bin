@@ -47,8 +47,8 @@ killall -q polybar
 polybar -r new &
 polybar -r new -c ~/.config/polybar/config.vertical &
 killall -q picom
-while pgrep -u $UID -x picom >/dev/null; do sleep 0.5; done
-picom --experimental-backends &
+while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
+picom &
 
 # ADJUST PADDING
 /home/r3dux/bin/env/padding.sh
