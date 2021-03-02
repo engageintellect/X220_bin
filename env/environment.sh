@@ -42,7 +42,7 @@ xfce4-power-manager &
 killall -q nitrogen
 nitrogen --restore &
 killall -q xautolock slock
-xautolock -time 20 -locker slock &
+xautolock -time 120 -locker slock &
 killall -q polybar
 polybar -r new &
 polybar -r new -c ~/.config/polybar/config.vertical &
