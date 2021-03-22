@@ -16,7 +16,7 @@ https://stocktwits.com/
 https://tradingview.com/
 https://app.weebull.com/
 https://cryptowatch.com/
-https://finviz.com/
+https://finviz.com/map.ashx?t=sec
 https://openinsider.com/
 https://iborrowdesk.com/
 https://short.com/
