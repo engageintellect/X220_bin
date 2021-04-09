@@ -53,6 +53,8 @@ picom &
 # ADJUST PADDING
 /home/r3dux/bin/env/padding.sh
 
+
+
 # bsp-layout set tall 2 --master-size 0.525
 # bsp-layout set tall 3 --master-size 0.525
 # bsp-layout set tall 4 --master-size 0.525

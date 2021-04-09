@@ -5,7 +5,6 @@
 BOOOKMARK_FILE=~/bin/env/scripts/bookmarks/bookmarks.txt
 
 
-
 bookmarks=$(cat $BOOOKMARK_FILE)
 
 read selection <<< $(for x in $bookmarks; do echo $x; done |  \
@@ -18,6 +17,7 @@ if [[ $selection == "" ]]; then
     clear
 else
     $BROWSER $selection
+    surf $selection
 fi
 
 
