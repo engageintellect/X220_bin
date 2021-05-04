@@ -17,7 +17,6 @@ if [[ $selection == "" ]]; then
     clear
 else
     $BROWSER $selection
-    surf $selection
 fi
 
 
