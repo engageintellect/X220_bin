@@ -10,17 +10,24 @@ sxhkd
 polybar
 picom
 nvim
+spectrwm
+tmux
 zshrc
 zsh_aliases
 zsh_env
 quit")
 
 
+# # DMENU
 # choice=$(echo -e "${options[0]}" | dmenu -fn 'Hack Nerd Font -10' -nb "$color0" -nf \
-#     "$color15" -sb "$color3" -sf "$color0" -nhb "$color3" -nhf "$color0" -shb "$color3" -shf "$color15" -h 25 -l 12 -g 1 -p 'Edit config > ')
+#     "$color15" -sb "$color3" -sf "$color0" -nhb "$color3" -nhf "$color0" -shb "$color3" -shf "$color15" -h 10 -l 12 -g 1 -p 'Edit config > ')
+
+# ROFI
+choice=$(echo -e "${options[0]}" | rofi -dmenu -p "EDIT CONFIG" \
+    -font "Hack Nerd Font 10" -location 1 -width 20 -lines 100 \
+    -theme-str '#window { width:20%; height:100%; }' )
 
 
-choice=$(echo -e "${options[0]}" | rofi -dmenu -font "Hack Nerd Font 10" -location 1 -width 15 -lines 100 -p "EDIT CONFIGS")
 case "$choice" in 
     quit)
         echo "Progam terminated." && exit 1
@@ -53,6 +60,15 @@ case "$choice" in
     zsh_env)
         choice="$HOME/.zshenv"
     ;;
+
+    spectrwm)
+        choice="$HOME/.config/spectrwm/spectrwm.conf"
+    ;;
+    tmux)
+        choice="$HOME/.config/tmux/tmux.conf"
+    ;;
+
+
     *)
         exit 1
     ;;
