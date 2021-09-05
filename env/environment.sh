@@ -17,7 +17,7 @@
 sxhkd &
 
 # SETUP TOUCHPAD
-/home/r3dux/bin/env/touchy.sh
+$HOME/bin/env/touchy.sh
 
 # DPI SCALING, KEY REPEAT, KEYSWAP, CURSOR-THEME...
 # xrandr --output LVDS1 --auto --primary
@@ -32,7 +32,7 @@ xsetroot -cursor_name left_ptr
 wal -R
 
 # COMPILE ST
-python /home/r3dux/bin/env/pywal/st_pywal.py
+python $HOME/bin/env/pywal/st_pywal.py
 
 # PROGRAMS
 clipmenud &
@@ -51,7 +51,7 @@ while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom &
 
 # ADJUST PADDING
-/home/r3dux/bin/env/padding.sh
+$HOME/bin/env/padding.sh
 
 
 
