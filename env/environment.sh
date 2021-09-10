@@ -10,9 +10,6 @@
 #    VERSION: 2.0
 
 
-
-
-
 # SXHKD
 sxhkd &
 
@@ -43,17 +40,18 @@ killall -q nitrogen
 nitrogen --restore &
 killall -q xautolock slock
 xautolock -time 120 -locker slock &
-killall -q polybar
-polybar -r new &
-polybar -r new -c ~/.config/polybar/config.vertical &
+# killall -q polybar
+# polybar -r new &
+# polybar -r new -c ~/.config/polybar/config.vertical &
 killall -q picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom &
 
+# POLYBAR
+$HOME/bin/env/whichbar.sh
+
 # ADJUST PADDING
 $HOME/bin/env/padding.sh
-
-
 
 # bsp-layout set tall 2 --master-size 0.525
 # bsp-layout set tall 3 --master-size 0.525
