@@ -11,7 +11,7 @@ bookmarks=$(cat $BOOOKMARK_FILE | sort)
 
 read selection <<< $(for x in $bookmarks; do echo $x; done |  \
     rofi -dmenu -p "BOOKMARKS" -font "Hack Nerd Font 10" -location 3 -width 20 -lines 100 \
-    -theme-str '#window { width:20%; height:100%; }')
+    -theme-str '#window { width:20%; height:100%; } listview{scrollbar: false;}')
 
 
 if [[ $selection == "" ]]; then
