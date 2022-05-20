@@ -21,11 +21,7 @@ sxhkd &
 # SETUP TOUCHPAD
 #-----------------------    
 $HOME/bin/env/touchy.sh
-
-# DPI SCALING, KEY REPEAT, KEYSWAP, CURSOR-THEME...
-# xrandr --output LVDS1 --auto --primary
-# xrandr --output DP1 --auto --rotate left
-# xrandr --output VGA1 --auto --primary --right-of DP1
+xrandr --output VGA1 --auto --primary --right-of DP1
 xrandr --dpi 96
 xset r rate 250 100
 /usr/bin/setxkbmap -option "caps:swapescape" &
