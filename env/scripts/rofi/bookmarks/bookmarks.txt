@@ -87,3 +87,4 @@ https://overapi.com/
 https://dexscreener.com
 https://news.ycombinator.com
 https://you.com
+https://hackernews.com
